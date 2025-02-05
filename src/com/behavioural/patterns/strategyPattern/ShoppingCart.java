@@ -9,6 +9,7 @@ public class ShoppingCart {
     }
 
     public void payBillAmount(Double amount){
-        payStrategy.payBillAmount(amount);
+        double payAmount = payStrategy.payBillAmount(amount);
+        System.out.println("Total Payable Amount is "+payAmount);
     }
 }
